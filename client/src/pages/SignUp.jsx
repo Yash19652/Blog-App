@@ -58,26 +58,33 @@ function SignUp() {
       {/* right */}
       <div className="flex-1">
         <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
-          <div>
-            <Label value='Username' />
-            <TextInput
-              type='text'
-              placeholder='Enter your username'
-              id='username' onChange={handleChange}
-            />
-            <Label value='Email' />
-            <TextInput
-              type='email'
-              placeholder='name@company.com'
-              id='email' onChange={handleChange}
-            />
-            <Label value='Password' />
-            <TextInput
-              type='password'
-              placeholder='Enter your password'
-              id='password' onChange={handleChange}
-            />
-          </div>
+        <div>
+              <Label value="Username" />
+              <TextInput
+                type="text"
+                placeholder="Enter your username"
+                id="username"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <Label value="Email" />
+              <TextInput
+                type="email"
+                placeholder="name@company.com"
+                id="email"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <Label value="Password" />
+              <TextInput
+                type="password"
+                placeholder="Enter your password"
+                id="password"
+                onChange={handleChange}
+              />
+            </div>
           <Button gradientDuoTone='purpleToPink' type='submit' disabled={loading}>
             {
               loading ? (
