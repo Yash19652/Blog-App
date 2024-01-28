@@ -19,21 +19,14 @@ function FooterCom() {
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
+
             <div>
             <Footer.Title title="About" />
             <Footer.LinkGroup col>
-                <Footer.Link
-                    href="https://www.linkedin.com/in/yash-shah-246228227/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <Footer.Link href="https://www.linkedin.com/in/yash-shah-246228227/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                 </Footer.Link>
-                <Footer.Link
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <Footer.Link href="/" target="_blank" rel="noopener noreferrer">
                     TechnoByte Blog
                 </Footer.Link>
             </Footer.LinkGroup>
@@ -42,18 +35,10 @@ function FooterCom() {
             <div>
             <Footer.Title title="Follow Us" />
             <Footer.LinkGroup col>
-                <Footer.Link
-                    href="https://github.com/Yash19652"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <Footer.Link href="https://github.com/Yash19652" target="_blank" rel="noopener noreferrer">
                     GitHub
                 </Footer.Link>
-                <Footer.Link
-                    href="https://www.discord.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <Footer.Link href="https://www.discord.com" target="_blank" rel="noopener noreferrer">
                     Discord
                 </Footer.Link>
             </Footer.LinkGroup>
@@ -62,22 +47,20 @@ function FooterCom() {
             <div>
             <Footer.Title title="Legal" />
             <Footer.LinkGroup col>
-                <Footer.Link
-                    href="#"   
-                >
+                <Footer.Link href="#">
                     Privacy Policy
                 </Footer.Link>
-                <Footer.Link
-                    href="#"
-                >
+                <Footer.Link href="#">
                     Terms &amp; Conditions
-                </Footer.Link>
+                </Footer.Link>    
             </Footer.LinkGroup>
             </div>
-
+            
           </div>
         </div>
+
         <FooterDivider/>
+
         <div className="w-full sm:flex sm:items-center sm:justify-between">
             <Footer.Copyright href="#" by="TechnoByte Blog" year={new Date().getFullYear()}/>
             <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
@@ -85,9 +68,9 @@ function FooterCom() {
                 <Footer.Icon href="#" icon={BsInstagram} />
                 <Footer.Icon href="#" icon={BsTwitter} />
                 <Footer.Icon href="#" icon={BsYoutube} />
-
             </div>
         </div>
+
       </div>
     </Footer>
   );
